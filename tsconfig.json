@@ -1,0 +1,33 @@
+{
+    "include": [
+        "src",
+        "types"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "compilerOptions": {
+        "target": "es5",
+        "module": "es6",
+        "lib": [
+            "DOM",
+            "ES2015"
+        ],
+        "typeRoots": [
+            "./node_modules/@types",
+            "./types"
+        ],
+        "moduleResolution": "node",
+        "declaration": true,
+        "declarationDir": "./dist",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        },
+    }
+}
